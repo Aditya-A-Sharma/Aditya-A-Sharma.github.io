@@ -4,13 +4,13 @@ body {
   }
   
   .dark-theme {
-    background-color: black;
-    color: white;
+    background-color: rgb(40, 40, 40);
+    color: rgb(215, 215, 215);;
   }
   
   .light-theme {
-    background-color: white;
-    color: black;
+    background-color: rgb(215, 215, 215);
+    color: rgb(40, 40, 40);
   }
   
   .theme-toggle {
