@@ -1,0 +1,22 @@
+
+body {
+    font-family: sans-serif;
+  }
+  
+  .dark-theme {
+    background-color: black;
+    color: white;
+  }
+  
+  .light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
