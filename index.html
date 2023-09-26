@@ -1,1 +1,52 @@
-<h1>Hellow World!!!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body class="light-theme">
+<h1>My Website</h1>
+
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-toggle-checkbox">
+  <label for="theme-toggle-checkbox">Toggle Theme</label>
+</div>
+
+<script>
+const themeToggleCheckbox = document.querySelector("#theme-toggle-checkbox");
+const bodyElement = document.querySelector("body");
+
+themeToggleCheckbox.addEventListener("change", () => {
+  if (themeToggleCheckbox.checked) {
+    bodyElement.classList.add("dark-theme");
+    bodyElement.classList.remove("light-theme");
+  } else {
+    bodyElement.classList.remove("dark-theme");
+    bodyElement.classList.add("light-theme");
+  }
+});
+</script>
+</body>
+</html>
