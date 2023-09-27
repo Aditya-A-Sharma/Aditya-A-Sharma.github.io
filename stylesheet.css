@@ -1,16 +1,25 @@
+:root {
+  --lightColor : #afafaf;
+  --darkColor : #222222;
+}
 
 body {
     font-family: sans-serif;
   }
+
+img {
+    border: 4px solid var(--lightColor);
+    border-radius: 20px;
+}
   
   .dark-theme {
-    background-color: rgb(40, 40, 40);
-    color: rgb(215, 215, 215);;
+    background-color: var(--darkColor);
+    color: var(--lightColor);
   }
   
   .light-theme {
-    background-color: rgb(215, 215, 215);
-    color: rgb(40, 40, 40);
+    background-color: var(--lightColor);
+    color: var(--darkColor);
   }
   
   .theme-toggle {
@@ -19,4 +28,12 @@ body {
     right: 0;
     padding: 10px;
     cursor: pointer;
+  }
+
+  .intro {
+    display: flex;
+  }
+
+  .intro-text {
+    padding-left: 10px;
   }
