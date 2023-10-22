@@ -18,21 +18,28 @@ body {
 
 .MainSection {
   width: 75%;
+  margin: 1% 2%;
+  padding: 1% 2%;
 }
 
 .SideSection {
   width: 25%;
   position: sticky;
   overflow: auto;
+  margin: 1% 2%;
+  padding: 1% 2%;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 2px solid var(--lightColor);
 }
 
 .textcontent {
   display: block;
-  border-top: 2px solid var(--lightColor);
+  /* border-top: 2px solid var(--lightColor);
   border-bottom: 2px solid var(--lightColor);
-  border-radius: 10px;
-  margin: 10px 20px;
-  padding: 10px 20px;
+  border-radius: 10px; */
 }
 
 .fiverr-seller-widget {
@@ -41,8 +48,8 @@ body {
 }
 
 h1 {
-  font-size: 60px;
-  padding: 10px 20px;
+  font-size: 40px;
+  padding: 1% 2%;
   text-align: center;
 }
 
