@@ -32,7 +32,12 @@ body {
 
 /* Solid border */
 hr.solid {
-  border-top: 2px solid var(--lightColor);
+  border-top: 1px solid var(--lightColor);
+  margin: 0px 20px;
+}
+
+.title-centered-text {
+  text-align: center;
 }
 
 .textcontent {
@@ -50,7 +55,6 @@ hr.solid {
 h1 {
   font-size: 40px;
   padding: 1% 2%;
-  text-align: center;
 }
 
 .NavBar {
