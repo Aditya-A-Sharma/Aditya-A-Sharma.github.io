@@ -586,6 +586,24 @@ section + section {
   transform: translateY(-2px);
 }
 
+.skill-badge.primary {
+  border-color: var(--accent);
+  background: rgba(232, 197, 71, 0.1);
+}
+
+.skill-category {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  margin-top: 24px;
+  font-weight: 500;
+}
+.skill-category:first-of-type {
+  margin-top: 0;
+}
+
 .skill-badge .skill-icon {
   font-size: 1.1rem;
 }
