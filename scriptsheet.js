@@ -28,6 +28,14 @@ themeToggle?.addEventListener('click', () => {
   setTheme(!body.classList.contains('light'));
 });
 
+// Keyboard support for theme toggle
+themeToggle?.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    setTheme(!body.classList.contains('light'));
+  }
+});
+
 // --- Mobile Nav ---
 const hamburger = document.getElementById('navHamburger');
 const navLinks = document.getElementById('navLinks');
