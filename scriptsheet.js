@@ -58,7 +58,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-in, .project-card, .tool-group, .skill-badge, .section-title, h2').forEach(el => observer.observe(el));
 
 // --- Active Nav Link on Scroll ---
 const sections = document.querySelectorAll('section[id]');
@@ -103,6 +103,44 @@ if (emailReveal) {
     }
   });
 }
+
+// --- Stagger delays for skill badges ---
+document.querySelectorAll('.skills-grid .skill-badge').forEach((badge, i) => {
+  badge.style.transitionDelay = (i * 0.04) + 's';
+});
+
+// --- Stagger delays for project cards ---
+document.querySelectorAll('.project-card').forEach((card, i) => {
+  card.style.transitionDelay = (i * 0.1) + 's';
+});
+
+// --- Stagger delays for tool groups ---
+document.querySelectorAll('.tool-group').forEach((group, i) => {
+  group.style.transitionDelay = (i * 0.1) + 's';
+});
+
+// --- Tilt effect on project cards ---
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `translateY(-4px) perspective(600px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+// --- Nav scroll shadow ---
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    nav?.classList.add('scrolled');
+  } else {
+    nav?.classList.remove('scrolled');
+  }
+});
 
 // --- Smooth Scroll for Safari ---
 document.querySelectorAll('a[href^="#"]').forEach(a => {
