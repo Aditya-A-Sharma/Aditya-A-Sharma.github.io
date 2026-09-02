@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Sharma — AI Software Engineer Resume (Extended)</title>
+<style>
+  @page { size: A4; margin: 12mm 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 9pt; color: #1a1a1a; line-height: 1.4; background: #fff; }
+  .page { width: 210mm; min-height: 297mm; padding: 0; margin: 0 auto; }
+  .page + .page { margin-top: 10mm; border-top: 1px solid #ddd; padding-top: 8mm; }
+
+  /* Header */
+  .header { text-align: center; padding-bottom: 8px; border-bottom: 2.5px solid #1a1a1a; margin-bottom: 10px; }
+  .header h1 { font-size: 22pt; font-weight: 700; color: #1a1a1a; letter-spacing: -0.5px; line-height: 1.1; }
+  .header .title { font-size: 10.5pt; color: #555; margin-top: 2px; font-weight: 400; letter-spacing: 0.3px; }
+  .header-contact { display: flex; justify-content: center; gap: 16px; margin-top: 6px; font-size: 8pt; color: #555; }
+  .header-contact a { color: #555; text-decoration: none; }
+  .header-contact .contact-item { display: inline-flex; align-items: center; gap: 4px; }
+  .header-contact .contact-item svg { width: 11px; height: 11px; fill: #555; flex-shrink: 0; }
+
+  /* Sections */
+  .section { margin-bottom: 8px; }
+  .section-title { font-size: 8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #1a1a1a; border-bottom: 1.5px solid #1a1a1a; padding-bottom: 3px; margin-bottom: 6px; margin-top: 10px; }
+
+  /* Summary */
+  .summary { font-size: 9pt; color: #333; line-height: 1.5; }
+
+  /* Skills */
+  .skills-grid { display: grid; grid-template-columns: 100px 1fr; gap: 3px 12px; font-size: 8.5pt; }
+  .skills-grid .cat { font-weight: 600; color: #1a1a1a; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.3px; }
+  .skills-grid .items { color: #444; }
+
+  /* Experience */
+  .exp { margin-bottom: 8px; }
+  .exp:last-child { margin-bottom: 0; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1px; }
+  .exp-role { font-size: 9.5pt; font-weight: 600; color: #1a1a1a; }
+  .exp-date { font-size: 8pt; color: #888; white-space: nowrap; font-weight: 500; }
+  .exp-company { font-size: 8.5pt; color: #666; margin-bottom: 2px; font-style: italic; }
+  .exp ul { padding-left: 14px; font-size: 8.5pt; color: #333; }
+  .exp li { margin-bottom: 2px; line-height: 1.4; }
+  .exp li::marker { color: #555; }
+
+  /* Projects */
+  .proj { margin-bottom: 6px; }
+  .proj:last-child { margin-bottom: 0; }
+  .proj-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .proj-name { font-weight: 600; font-size: 9pt; color: #1a1a1a; }
+  .proj-link { font-size: 7.5pt; color: #888; }
+  .proj-desc { font-size: 8.5pt; color: #555; margin-top: 1px; }
+
+  /* Education */
+  .edu { font-size: 9pt; }
+  .edu-line { display: flex; justify-content: space-between; align-items: baseline; }
+  .edu-detail { font-size: 8pt; color: #666; margin-top: 1px; }
+
+  /* Print */
+  @media print {
+    body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { width: 100%; min-height: auto; }
+    .page + .page { margin-top: 0; page-break-before: always; border-top: none; padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+
+  <div class="header">
+    <h1>Aditya Sharma</h1>
+    <div class="title">AI Software Engineer</div>
+    <div class="header-contact">
+      <span class="contact-item"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>Hello@AdityaSharma.in</span>
+      <span class="contact-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg><a href="https://www.AdityaSharma.in">www.AdityaSharma.in</a></span>
+      <span class="contact-item"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><a href="https://github.com/Aditya-A-Sharma">github.com/Aditya-A-Sharma</a></span>
+      <span class="contact-item"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><a href="https://linkedin.com/in/adityaashoksharma">linkedin.com/in/adityaashoksharma</a></span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary">
+      Engineer who turned a 2-person team into a 5-country enterprise platform — shipping 6 AI/LLM features in under a year. 8+ years in software engineering, progressing from junior developer to architecting multi-provider LLM systems (OpenAI, Anthropic, local models) and full-stack compliance platforms. Python, FastAPI, React, PostgreSQL, AWS.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="cat">Languages</div><div class="items">Python, TypeScript, JavaScript, Java, SQL, HTML/CSS</div>
+      <div class="cat">Backend</div><div class="items">FastAPI, Django, SQLAlchemy, Celery, Redis, PostgreSQL, REST APIs</div>
+      <div class="cat">Frontend</div><div class="items">React 18, TypeScript, Tailwind CSS</div>
+      <div class="cat">AI/ML</div><div class="items">OpenAI, Anthropic Claude, LangChain, Ollama, Local LLMs (Qwen, Gemma), RAG, pgvector, Prompt Engineering</div>
+      <div class="cat">DevOps</div><div class="items">AWS (Lightsail, Amplify, S3), Docker, K8s, Terraform, CI/CD, Git, Linux</div>
+      <div class="cat">Practices</div><div class="items">Agile, Scrum, Code Review, Unit Testing, System Design, API Design, Monitoring, Technical Documentation</div>
+      <div class="cat">Tools</div><div class="items">Cursor, VS Code, Playwright, GitHub, Jira, WordPress</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="exp">
+      <div class="exp-header">
+        <div class="exp-role">AI Software Engineer</div>
+        <div class="exp-date">Jun 2025 - Present</div>
+      </div>
+      <div class="exp-company">auRELIA Insights · Full-time · Malaysia (Remote)</div>
+      <ul>
+        <li>Architected and shipped 6 production AI features — AI form designer, conversational document editing, NLP auto-fill — reducing manual compliance work by ~60% for manufacturers across 5 countries</li>
+        <li>Designed multi-provider LLM architecture (OpenAI, Anthropic Claude, local Ollama models) with RAG pipelines and pgvector, enabling single-tenant deployment for data-sensitive clients</li>
+        <li>Full-stack ownership: FastAPI/PostgreSQL backend (12 modules), React 18 frontend, AWS infrastructure (Lightsail, Amplify, S3), CI/CD pipelines, and end-to-end UI/UX</li>
+        <li>Built automated document generator producing regulatory-compliant reports in multiple formats, replacing a manual 3-day process with a 10-minute automated pipeline</li>
+        <li>Implemented role-based access control, audit logging, and compliance workflows serving manufacturers across Malaysia, Singapore, and 3 other countries</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-header">
+        <div class="exp-role">Software Engineer</div>
+        <div class="exp-date">Jan 2022 - Dec 2024</div>
+      </div>
+      <div class="exp-company">Synfab · Full-time</div>
+      <ul>
+        <li>Built and maintained Java/Spring Boot backend services with Oracle DB, serving internal operations across multiple business units</li>
+        <li>Developed full-stack web applications with REST APIs, improving data access workflows for non-technical stakeholders</li>
+        <li>Implemented automated testing with Playwright, reducing regression testing time and catching UI bugs before production deploys</li>
+        <li>Followed SDLC with agile methodologies, participated in code reviews, and provided prompt user support</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-header">
+        <div class="exp-role">Junior Developer</div>
+        <div class="exp-date">Dec 2020 - Jan 2022</div>
+      </div>
+      <div class="exp-company">Synfab · Full-time</div>
+      <ul>
+        <li>Developed Java-based web applications using Spring Boot, Hibernate, and RESTful services, transitioning from hardware ops to software engineering</li>
+        <li>Set up GitHub Actions CI/CD pipelines, automating build and deployment for team of 5 developers</li>
+        <li>Designed and maintained Java components using MVC frameworks</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-header">
+        <div class="exp-role">Infrastructure Engineer</div>
+        <div class="exp-date">Apr 2015 - Apr 2020</div>
+      </div>
+      <div class="exp-company">Synfab · Full-time</div>
+      <ul>
+        <li>Managed Linux server infrastructure with automated backup systems, achieving 99.9% uptime across production environments</li>
+        <li>Led digitalization initiative replacing paper-based records with automated systems, reducing retrieval time by 95%</li>
+        <li>Built and configured Linux servers for data storage and backup systems</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+
+  <div class="section">
+    <div class="section-title">Freelance &amp; Independent Work</div>
+
+    <div class="exp">
+      <div class="exp-header">
+        <div class="exp-role">Freelance Developer</div>
+        <div class="exp-date">Mar 2011 - Present</div>
+      </div>
+      <div class="exp-company">Self-employed · Remote</div>
+      <ul>
+        <li>Built automated trading systems with backtesting, risk management, and real-time execution for clients across Indian and US markets</li>
+        <li>Delivered 20+ web applications and automation tools, managing full project lifecycle from requirements to deployment</li>
+      </ul>
+    </div>
+
+    <div class="exp">
+      <div class="exp-header">
+        <div class="exp-role">Crypto Consultant</div>
+        <div class="exp-date">Dec 2017 - Dec 2020</div>
+      </div>
+      <div class="exp-company">Self-employed</div>
+      <ul>
+        <li>Blockchain consulting and mining operations</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">RYLOTRACE Platform</span>
+        <span class="proj-link">AdityaSharma.in</span>
+      </div>
+      <div class="proj-desc">12-module GMP compliance platform with AI features (form designer, doc generator, conversational editing). FastAPI + React 18 + PostgreSQL + AWS. Serving manufacturers in 5 countries. Built as primary engineer in a 2-person team.</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">Automated Trading System</span>
+        <span class="proj-link">GitHub</span>
+      </div>
+      <div class="proj-desc">Production algo-trading bot for Indian stock markets (NSE). Multi-threaded parallel trading across 30+ ETFs with persistent state, real-time Flask dashboard, OAuth2 auth, and startup safety checks. ~10K lines of Python.</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">Roop Batch Wrapper</span>
+        <span class="proj-link">GitHub</span>
+      </div>
+      <div class="proj-desc">Batch processing wrapper for roop — added directory iteration, config persistence, and GPU toggle for bulk face-swap operations.</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">MIPEAC CDP</span>
+      </div>
+      <div class="proj-desc">Full-stack website for Malaysian Real Estate Association. Responsive design with 30% faster load times and 20% traffic increase.</div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">Automated Crypto Trader</span>
+      </div>
+      <div class="proj-desc">Algo crypto trading on Binance. Real-time data streams, API authentication, and demo mode for paper trading. Top marks in final year.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu">
+      <div class="edu-line">
+        <div><strong>Bachelor of Science in Information Technology</strong> · Mumbai University</div>
+        <div class="exp-date">2022</div>
+      </div>
+      <div class="edu-detail">Topper — 9.27 CGPA (achieved while working full-time at Synfab)</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
