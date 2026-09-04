@@ -1152,21 +1152,6 @@ body {
   box-shadow: 0 0 0 2px var(--bg-primary), 0 0 0 4px var(--accent);
 }
 
-/* --- Animated gradient border on hero photo --- */
-.hero-photo::before {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, var(--accent), var(--peace), var(--chaos), var(--accent));
-  z-index: -1;
-  animation: borderSpin 6s linear infinite;
-  opacity: 0.6;
-}
-@keyframes borderSpin {
-  to { transform: rotate(360deg); }
-}
-
 /* --- Magnetic button effect --- */
 .btn {
   position: relative;
@@ -1268,7 +1253,6 @@ section + section {
     animation: none;
   }
   .hero-tagline::after { animation: none; }
-  .hero-photo::before { animation: none; }
   .project-card, .tool-group, .skill-badge {
     opacity: 1;
     transform: none;
