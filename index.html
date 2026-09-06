@@ -175,6 +175,21 @@
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
+          <div class="timeline-date">Apr 2015 — Apr 2020</div>
+          <h3>Synfab, India</h3>
+          <p class="timeline-role">Hardware and Networking</p>
+          <div class="timeline-tech">
+            <span>Linux</span><span>Samba Server</span><span>Windows</span><span>SMB</span>
+          </div>
+          <ul>
+            <li>Managed Linux server operations with automated backups — achieved 99% reduction in downtime</li>
+            <li>Built and configured Linux servers for data storage and backup systems</li>
+            <li>Led digitalization of paper records, streamlining data retrieval company-wide</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
           <div class="timeline-date">Dec 2017 — Dec 2020</div>
           <h3>Self-Employed</h3>
           <p class="timeline-role">Crypto Consultant</p>
@@ -199,38 +214,29 @@
       <h2>Projects</h2>
       <div class="projects-grid">
 
-        <div class="project-card featured">
-          <div class="featured-badge">Featured</div>
+        <div class="project-card featured" data-modal="rylotrace">
+          <div class="featured-badge">Founding Engineer</div>
           <h3>RYLOTRACE (auRELIA)</h3>
           <p class="project-desc">12-module food safety operations platform for F&B manufacturers. Built 6 AI features including form designer, document generator, and NLP-based auto-fill instructions. End-to-end production planning, lot traceability, and HACCP compliance.</p>
           <div class="project-tech">
             <span>React 18</span><span>TypeScript</span><span>FastAPI</span><span>SQLAlchemy 2.0</span><span>PostgreSQL</span><span>Playwright</span><span>AWS</span><span>Ollama</span>
           </div>
-          <div class="project-links">
-            <a href="https://www.adityasharma.in" target="_blank" rel="noopener" class="project-link">Live Demo</a>
-          </div>
         </div>
 
-        <div class="project-card featured">
+        <div class="project-card featured" data-modal="ats">
           <div class="featured-badge">Featured</div>
           <h3>Automated Trading System (ATS)</h3>
           <p class="project-desc">Production algo-trading bot for Indian stock markets (NSE). Multi-threaded parallel trading across 30+ ETFs with persistent state, real-time Flask dashboard, OAuth2 auth, and startup safety checks. ~10K lines of Python.</p>
           <div class="project-tech">
-            <span>Python</span><span>Flask</span><span>Pandas</span><span>NumPy</span><span>SSE</span><span>REST APIs</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Aditya-A-Sharma" target="_blank" rel="noopener" class="project-link">GitHub</a>
+            <span>Python</span><span>Flask</span><span>Pandas</span><span>NumPy</span><span>SSE</span><span>REST APIs</span><span>GitHub</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <h3>Roop Batch Wrapper</h3>
-          <p class="project-desc">Batch processing wrapper for roop by s0md3v — added directory iteration, config persistence, and GPU toggle for bulk face-swap operations.</p>
+        <div class="project-card" data-modal="roop">
+          <h3>Roop-Parivartanam</h3>
+          <p class="project-desc">Standalone batch UI for roop by s0md3v — directory iteration, auto-skip processed files, and simple/advanced modes. Drop-in script, no fork required.</p>
           <div class="project-tech">
             <span>Python</span><span>Tkinter</span><span>GitHub</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Aditya-A-Sharma" target="_blank" rel="noopener" class="project-link">GitHub</a>
           </div>
         </div>
 
@@ -360,6 +366,99 @@
   </section>
 
   </main>
+
+  <!-- Project Modal (outside animated containers so fixed positioning isn't trapped) -->
+  <div class="modal-overlay" id="modal-roop" role="dialog" aria-modal="true" aria-label="Roop-Parivartanam details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3>Roop-Parivartanam</h3>
+      <p class="modal-subtitle">One-click bulk deepfake UI for roop</p>
+      <div class="modal-body">
+        <p>Standalone batch processing script for <a href="https://github.com/s0md3v/roop" target="_blank" rel="noopener">roop</a> by s0md3v. Drop <code>Modify.py</code> into any roop installation — no fork required.</p>
+        <h4>Features</h4>
+        <ul>
+          <li>Simple easy-to-understand UI</li>
+          <li>Process all files within a directory</li>
+          <li>No save dialogue boxes — output saved in target folder automatically</li>
+          <li>Output files renamed as <code>Video_Face.mp4</code></li>
+          <li>Auto-skips already processed files</li>
+          <li>Advanced mode: select custom venv and run.py for multiple roop versions</li>
+        </ul>
+        <h4>Gallery</h4>
+        <div class="modal-gallery" id="roopGallery">
+          <div class="gallery-viewport">
+            <div class="gallery-slide active">
+              <img src="Images/roop-demo-1.gif" alt="Roop-Parivartanam face-swap output sample" loading="lazy">
+              <p class="gallery-caption">Face-swap output sample</p>
+            </div>
+            <div class="gallery-slide">
+              <img src="Images/roop-demo-2.gif" alt="Roop-Parivartanam bulk processing demo" loading="lazy">
+              <p class="gallery-caption">Bulk processing demo</p>
+            </div>
+            <div class="gallery-slide">
+              <img src="Images/roop-simple.png" alt="Roop-Parivartanam simple mode UI" loading="lazy">
+              <p class="gallery-caption">Simple mode UI</p>
+            </div>
+            <div class="gallery-slide">
+              <img src="Images/roop-advanced.png" alt="Roop-Parivartanam advanced mode UI with venv and run.py selection" loading="lazy">
+              <p class="gallery-caption">Advanced mode UI</p>
+            </div>
+          </div>
+          <button class="gallery-nav gallery-prev" aria-label="Previous image">‹</button>
+          <button class="gallery-nav gallery-next" aria-label="Next image">›</button>
+          <div class="gallery-meta">
+            <span class="gallery-counter">1 / 4</span>
+            <span class="gallery-dots"></span>
+          </div>
+        </div>
+        <p class="modal-note">View the source code and more output samples on the <a href="https://github.com/Aditya-A-Sharma/Roop-Parivartanam-2" target="_blank" rel="noopener">GitHub README</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Modal: ATS -->
+  <div class="modal-overlay" id="modal-ats" role="dialog" aria-modal="true" aria-label="Automated Trading System details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3>Automated Trading System (ATS)</h3>
+      <p class="modal-subtitle">Production algo-trading bot for Indian stock markets (NSE)</p>
+      <div class="modal-body">
+        <p>Live trading engine on the Shoonya (Finvasia) broker API — 35 NSE symbols traded in parallel with one thread per symbol, plus a real-time Flask dashboard ("Shoonya Terminal"). ~10K lines of Python, evolved over 30+ versions from first live trade to options and CNC handling.</p>
+        <h4>Features</h4>
+        <ul>
+          <li>One thread per symbol — 35 NSE symbols in parallel (index/commodity ETFs like NIFTYBEES, BANKBEES, GOLDBEES + equities)</li>
+          <li>Persistent per-symbol state — positions and targets survive restarts</li>
+          <li>Real-time "Shoonya Terminal" dashboard (Flask + SSE) with remote start/stop</li>
+          <li>OAuth2 + TOTP auto-login with auto-restart on session expiry</li>
+          <li>Startup safety checks and market-hours cutoff (auto-stop 3:15pm IST)</li>
+          <li>Risk controls: per-share cash limits, order-book buy/sell targets, don't-hold-losses strategy</li>
+        </ul>
+        <p class="modal-note">Private codebase (live trading + broker credentials).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Modal: RYLOTRACE -->
+  <div class="modal-overlay" id="modal-rylotrace" role="dialog" aria-modal="true" aria-label="RYLOTRACE details">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3>RYLOTRACE (auRELIA)</h3>
+      <p class="modal-subtitle">Founding Engineer · 12-module food safety operations platform for F&B manufacturers</p>
+      <div class="modal-body">
+        <p>One of two engineers building RYLOTRACE end to end — React 18 frontend, FastAPI backend, PostgreSQL, and AWS infrastructure. Twelve connected modules covering production planning, lot traceability, and HACCP compliance for Malaysian food manufacturers.</p>
+        <h4>Features</h4>
+        <ul>
+          <li>6 production AI features: form designer, conversational editor, document generator, NLP auto-fill, multi-provider LLM, offline Ollama support</li>
+          <li>Full-stack ownership across all 12 modules — frontend, backend, database, infrastructure</li>
+          <li>Multi-provider LLM architecture (OpenAI, Anthropic) with env-based switching</li>
+          <li>Offline-capable deployment on client hardware via local LLM</li>
+          <li>AWS infrastructure: Lightsail backend, Amplify frontend, S3 storage, PostgreSQL</li>
+          <li>Product rebrand: logo, layout theme, loading animations — plus a WordPress blog for content marketing</li>
+        </ul>
+        <p class="modal-note">Private codebase. See the live platform at <a href="https://rylotrace.ai" target="_blank" rel="noopener">rylotrace.ai</a>.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">

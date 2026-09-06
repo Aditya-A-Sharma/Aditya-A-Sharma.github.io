@@ -307,4 +307,70 @@ document.querySelectorAll('.btn, .contact-link').forEach(el => {
   });
 });
 
+// --- Project Modal ---
+document.querySelectorAll('[data-modal]').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', () => {
+    const modal = document.getElementById('modal-' + card.dataset.modal);
+    if (modal) {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+});
+
+function closeModal(modal) {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.modal-overlay').forEach(modal => {
+  modal.querySelector('.modal-close')?.addEventListener('click', () => closeModal(modal));
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal(modal);
+  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.active').forEach(closeModal);
+  }
+});
+
+// --- Modal Gallery Slideshow ---
+document.querySelectorAll('.modal-gallery').forEach(gallery => {
+  const slides = gallery.querySelectorAll('.gallery-slide');
+  const counter = gallery.querySelector('.gallery-counter');
+  const dotsWrap = gallery.querySelector('.gallery-dots');
+  let index = 0;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to image ' + (i + 1));
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      show(i);
+    });
+    dotsWrap.appendChild(dot);
+  });
+  const dots = dotsWrap.querySelectorAll('.gallery-dot');
+
+  function show(i) {
+    index = (i + slides.length) % slides.length;
+    slides.forEach((s, j) => s.classList.toggle('active', j === index));
+    dots.forEach((d, j) => d.classList.toggle('active', j === index));
+    if (counter) counter.textContent = (index + 1) + ' / ' + slides.length;
+  }
+
+  gallery.querySelector('.gallery-prev')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    show(index - 1);
+  });
+  gallery.querySelector('.gallery-next')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    show(index + 1);
+  });
+});
+
 
